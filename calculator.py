@@ -1,18 +1,27 @@
+def calculator(a,b):
+    return a + b
+def calcular(a,b):
+    return a - b
+def cal(a,b):
+    return a * b
+def calcu(a,b):
+    if b == 0:
+        return "zero"
+    return a / b
+    
+
 while True:
     num=float(input("enter number: "))
     op=input("+ -/*&^%: ")
     num2=float(input("enter number2: "))
     if op=="+":
-        print(num+num2)
+        print(calculator(num,num2))
     elif op=="-":
-        print(num-num2)
+        print(calcular(num,num2))
     elif op=="*":
-        print(num*num2)
+        print(cal(num,num2))
     elif op=="/":
-        if num2 == 0:
-            print("zero")
-        else:
-           print(num/num2)
+        print(calcu(num,num2))
     else:
         print("invalid option")
     print("done")
